@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<eveapi>
+	<currentTime>2009-09-08 05:27:42</currentTime>
+	<result>
+		<characterID>218624675</characterID>
+		<name>Melisande Laroche</name>
+		<race>Gallente</race>
+		<bloodLine>Gallente</bloodLine>
+		<gender>Female</gender>
+		<corporationName>The Aduro Protocol</corporationName>
+		<corporationID />
+		<cloneName>Clone Grade Theta</cloneName>
+		<cloneSkillPoints>7750000</cloneSkillPoints>
+		<balance>44875956.03</balance>
+		<attributeEnhancers>
+			<perceptionBonus Manual="false">
+				<augmentatorName>Ocular Filter - Standard</augmentatorName>
+				<augmentatorValue>4</augmentatorValue>
+			</perceptionBonus>
+			<memoryBonus Manual="false">
+				<augmentatorName>Memory Augmentation - Standard</augmentatorName>
+				<augmentatorValue>4</augmentatorValue>
+			</memoryBonus>
+			<willpowerBonus Manual="false">
+				<augmentatorName>Neural Boost - Standard</augmentatorName>
+				<augmentatorValue>4</augmentatorValue>
+			</willpowerBonus>
+			<intelligenceBonus Manual="false">
+				<augmentatorName>Cybernetic Subprocessor - Standard</augmentatorName>
+				<augmentatorValue>4</augmentatorValue>
+			</intelligenceBonus>
+		</attributeEnhancers>
+		<attributes>
+			<intelligence>8</intelligence>
+			<charisma>5</charisma>
+			<perception>9</perception>
+			<memory>10</memory>
+			<willpower>7</willpower>
+		</attributes>
+		<rowset name="skills">
+			<row typeID="11584" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="24241" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="23618" skillpoints="7072" level="2" lastconfirmedlevel="2" />
+			<row typeID="3442" skillpoints="7072" level="2" lastconfirmedlevel="2" />
+			<row typeID="12305" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="23606" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="3436" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="3438" skillpoints="16011" level="3" lastconfirmedlevel="3" />
+			<row typeID="3437" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="11579" skillpoints="48000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3427" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3426" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="3432" skillpoints="90510" level="4" lastconfirmedlevel="4" />
+			<row typeID="3428" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3435" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3433" skillpoints="750" level="1" lastconfirmedlevel="1" />
+			<row typeID="3431" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3551" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="19921" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3429" skillpoints="9823" level="3" lastconfirmedlevel="3" />
+			<row typeID="3434" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3423" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3424" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3418" skillpoints="4255" level="2" lastconfirmedlevel="2" />
+			<row typeID="3417" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3413" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="21059" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3422" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3419" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3416" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3425" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3316" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3300" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3304" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3312" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3310" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3311" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3301" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3318" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="12183" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="12184" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="12185" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="12186" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="16281" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="3380" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="12187" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="12188" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3387" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3386" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="22578" skillpoints="5657" level="2" lastconfirmedlevel="2" />
+			<row typeID="12190" skillpoints="90510" level="4" lastconfirmedlevel="4" />
+			<row typeID="12191" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3388" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="12192" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3389" skillpoints="412555" level="4" lastconfirmedlevel="4" />
+			<row typeID="3385" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="12193" skillpoints="45256" level="4" lastconfirmedlevel="4" />
+			<row typeID="12194" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="12195" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="20494" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="20495" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3348" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="22536" skillpoints="90510" level="4" lastconfirmedlevel="4" />
+			<row typeID="3350" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3349" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3377" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="12387" skillpoints="24000" level="3" lastconfirmedlevel="3" />
+			<row typeID="12385" skillpoints="135765" level="4" lastconfirmedlevel="4" />
+			<row typeID="3376" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="12386" skillpoints="24000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3378" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3375" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3374" skillpoints="256000" level="5" lastconfirmedlevel="5" />
+			<row typeID="12376" skillpoints="135765" level="4" lastconfirmedlevel="4" />
+			<row typeID="3379" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="22806" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="22807" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3394" skillpoints="90510" level="4" lastconfirmedlevel="4" />
+			<row typeID="26252" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="22808" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3392" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="16069" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="27902" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="3393" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="25863" skillpoints="24000" level="3" lastconfirmedlevel="3" />
+			<row typeID="22809" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3319" skillpoints="250" level="1" lastconfirmedlevel="1" />
+			<row typeID="3452" skillpoints="5657" level="2" lastconfirmedlevel="2" />
+			<row typeID="3450" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3453" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3451" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3454" skillpoints="7072" level="2" lastconfirmedlevel="2" />
+			<row typeID="3449" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3455" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="3410" skillpoints="768000" level="5" lastconfirmedlevel="5" />
+			<row typeID="25739" skillpoints="2000" level="1" lastconfirmedlevel="1" />
+			<row typeID="3412" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3411" skillpoints="135765" level="4" lastconfirmedlevel="4" />
+			<row typeID="24242" skillpoints="250" level="1" lastconfirmedlevel="1" />
+			<row typeID="3406" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="3409" skillpoints="24000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3403" skillpoints="1415" level="2" lastconfirmedlevel="2" />
+			<row typeID="3402" skillpoints="45255" level="4" lastconfirmedlevel="4" />
+			<row typeID="3359" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3356" skillpoints="16000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3355" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+			<row typeID="12099" skillpoints="8486" level="2" lastconfirmedlevel="2" />
+			<row typeID="3330" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="12097" skillpoints="500" level="1" lastconfirmedlevel="1" />
+			<row typeID="22551" skillpoints="40000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3332" skillpoints="40000" level="3" lastconfirmedlevel="3" />
+			<row typeID="3328" skillpoints="90510" level="4" lastconfirmedlevel="4" />
+			<row typeID="3340" skillpoints="32000" level="3" lastconfirmedlevel="3" />
+			<row typeID="17940" skillpoints="1024000" level="5" lastconfirmedlevel="5" />
+			<row typeID="3327" skillpoints="81355" level="4" lastconfirmedlevel="4" />
+			<row typeID="3446" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="25235" skillpoints="250" level="1" lastconfirmedlevel="1" />
+			<row typeID="16598" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="16594" skillpoints="4243" level="2" lastconfirmedlevel="2" />
+			<row typeID="3444" skillpoints="2829" level="2" lastconfirmedlevel="2" />
+			<row typeID="3443" skillpoints="8000" level="3" lastconfirmedlevel="3" />
+		</rowset>
+		<certificatesID>
+			<int>239</int>
+			<int>258</int>
+			<int>37</int>
+			<int>12</int>
+			<int>240</int>
+			<int>53</int>
+			<int>282</int>
+			<int>285</int>
+			<int>259</int>
+			<int>5</int>
+			<int>270</int>
+			<int>68</int>
+			<int>165</int>
+			<int>161</int>
+			<int>278</int>
+			<int>250</int>
+			<int>46</int>
+			<int>338</int>
+			<int>262</int>
+			<int>192</int>
+			<int>186</int>
+			<int>195</int>
+			<int>183</int>
+			<int>50</int>
+			<int>31</int>
+			<int>200</int>
+			<int>93</int>
+			<int>180</int>
+		</certificatesID>
+	</result>
+	<cachedUntil>2009-09-08 06:27:29</cachedUntil>
+	<XMLExpires>2009-09-08T06:27:29Z</XMLExpires>
+	<skillTraining>
+		<error code="0" />
+		<currentTime>2009-09-08 05:27:29</currentTime>
+		<result>
+			<currentTQTime>0001-01-01 00:00:00</currentTQTime>
+			<trainingEndTime>2009-09-15 05:45:34</trainingEndTime>
+			<trainingStartTime>2009-09-03 17:55:32</trainingStartTime>
+			<trainingTypeID>3389</trainingTypeID>
+			<trainingStartSP>185439</trainingStartSP>
+			<trainingDestinationSP>768000</trainingDestinationSP>
+			<trainingToLevel>5</trainingToLevel>
+			<skillInTraining>1</skillInTraining>
+		</result>
+		<cachedUntil>2009-09-08 06:27:28</cachedUntil>
+		<PreWarningGive>false</PreWarningGive>
+		<AlertRaisedAlready>false</AlertRaisedAlready>
+	</skillTraining>
+	<ImplantSets>
+		<ImplantSet>
+			<Number>0</Number>
+			<Implants>
+				<UserImplant Slot="1" Tech2="false" Bonus="4" ID="10216" Name="Ocular Filter - Standard" Manual="false" />
+				<UserImplant Slot="2" Tech2="false" Bonus="4" ID="10208" Name="Memory Augmentation - Standard" Manual="false" />
+				<UserImplant Slot="3" Tech2="false" Bonus="4" ID="10212" Name="Neural Boost - Standard" Manual="false" />
+				<UserImplant Slot="4" Tech2="false" Bonus="4" ID="10221" Name="Cybernetic Subprocessor - Standard" Manual="false" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+				<UserImplant d5p1:nil="true" xmlns:d5p1="http://www.w3.org/2001/XMLSchema-instance" />
+			</Implants>
+		</ImplantSet>
+	</ImplantSets>
+</eveapi>

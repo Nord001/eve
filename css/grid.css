@@ -1,0 +1,55 @@
+table
+{
+  width: 500px;
+  font-size: small;  
+}
+
+td.item {
+  border-top: 1px solid #999999;
+  border-right: 1px solid #1e2022;
+  border-bottom: 1px solid #1e2022;
+  border-left: 1px solid #999999;
+  padding: 3px;
+  background: #777777;
+  text-align: center;
+}
+
+td.right
+{
+  width: 125px;
+  color: #ffffff;
+  text-align: right;
+}
+
+td.left
+{
+  width: 125px;
+  color: #ffffff;
+  text-align: left;
+}
+
+table.list
+{
+  border-top: 2px solid #999999;
+  border-right: 2px solid #1e2022;
+  border-bottom: 2px solid #1e2022;
+  border-left: 2px solid #999999;
+}
+
+th
+{
+  width: 150px;
+  border-top: 1px solid #999999;
+  border-right: 1px solid #1e2022;
+  border-bottom: 1px solid #1e2022;
+  border-left: 1px solid #999999;
+  padding: 5px;
+  text-align: center;
+  background-color: navy;
+  color: white;
+}
+
+input.edit
+{
+  border: black 1px solid;
+}
