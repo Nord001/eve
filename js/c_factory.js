@@ -1,10 +1,10 @@
 /**
  * EVE Online Information System Project
  * 
- * Title: factory.js
+ * Title: c_factory.js
  * 
  * Author: Andy Lo
- * Last Modified: 2011-22-06
+ * Last Modified: 2011-25-06
  */
 
 /**
@@ -36,8 +36,8 @@ function c_Factory() {
      * Mutator. Sets the class the factory is to manufacture.
      * 
      * Parameters:
-     *     className - A reference to the function that represents the class to
-     * be manufactured.
+     *     p_className - A reference to the function (that represents the class)
+     * to be manufactured.
      *         
      * Returns:
      *     Nothing.
@@ -49,12 +49,12 @@ function c_Factory() {
         /* If the class parameter isn't actually a function, generate an error.
          * This prevents the factory from producing something strange. */
         if(typeof(p_className) != "function") {
-            alert("Factory cannot be set to invalid class.");
+            alert("Factory cannot be set to non-function reference.");
         } else {
             m_productClass = p_className;
         }
     }
-
+    
     /**
      * Method: getClass
      * 
@@ -64,7 +64,7 @@ function c_Factory() {
      *     None.
      * 
      * Returns:
-     *     The reference to the function that represents the class that the
+     *     A reference to the function (that represents the class) that the
      * factory is set to manufacture.
      * 
      */
@@ -79,7 +79,7 @@ function c_Factory() {
      * returns a reference to the created instance.
      *     
      * Returns:
-     *     instance - A reference to the created instance.
+     *     A reference to the created instance.
      *     
      * See Also:
      *     <setClass>
@@ -87,10 +87,10 @@ function c_Factory() {
     this.create = function() {
         try {
             l_instance = new m_productClass();
-        } catch(error) {
-            alert("Error instantiating class: " + error);
+        } catch(e_error) {
+            alert("Error instantiating class: " + e_error);
         }
-
+        
         return l_instance;
     }
 }
