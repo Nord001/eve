@@ -19,69 +19,26 @@ var editableId = null;
 var stylesheetDoc;
 
 // Initialization.
-addLoadEvent(loadStylesheet);
-addLoadEvent(loadQueryForm);
+onloadQueue = new AddOnloadEvent();
+onloadQueue.addEvent(loadStylesheet);
+onloadQueue.addEvent(loadQueryForm);
 
-function addLoadEvent(currentHandler)
-{
-  var existingHandler = window.onload;
-  if(typeof existingHandler != "function")
-  {
-    window.onload = currentHandler;
-  }
-  else
-  {
-    window.onload = function()
-    {
-      if(existingHandler)
-      {
-        existingHandler();
-      }
-      currentHandler();
+function loadStylesheet() {
+   if(window.XMLHttpRequest && window.XSLTProcessor && window.DOMParser) {
+        httpRequest.open("POST", xsltFileUrl, false);
+        httpRequest.setRequestHeader("Content-type",
+          "application/x-www-form-urlencoded");
+        httpRequest.send(null);
+
+        // Creates the XSLT document.
+        if(this.DOMParser) {
+          var dp = new DOMParser();
+          stylesheetDoc = dp.parseFromString(httpRequest.responseText,
+            "text/xml");
+        }
+    } else {
+        alert("Your browser doesn\'t support the necessary functionality.");
     }
-  }
-}
-
-// This function creates and returns an XHR object.  No ActiveX implementation.
-function createXmlHttpRequestObject()
-{
-  var httpRequest;
-
-  httpRequest = new XMLHttpRequest();
-
-  if(!httpRequest)
-  {
-    // Displays an alert if an XHR object could not be created.
-    alert("Error creating XMLHttpRequest object.");
-  }
-  else
-  {
-    return httpRequest;
-  }
-}
-
-function loadStylesheet()
-{
-  if(window.XMLHttpRequest && window.XSLTProcessor && window.DOMParser)
-  {
-    httpRequest.open("POST", xsltFileUrl, false);
-    httpRequest.setRequestHeader("Content-type",
-      "application/x-www-form-urlencoded");
-    httpRequest.send(null);
-
-    // Creates the XSLT document.
-    if(this.DOMParser)
-    {
-      var dp = new DOMParser();
-      stylesheetDoc = dp.parseFromString(httpRequest.responseText,
-        "text/xml");
-    }
-  }
-  // Displays an alert if browser does not support XSLT functionality.
-  else
-  {
-    alert("Your browser doesn\'t support the necessary functionality.");
-  }
 }
 
 function loadQueryForm()

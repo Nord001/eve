@@ -1,25 +1,26 @@
 <?php
-function sanitize($string, $length = null)
+function c_Sanitize_API($p_string, $p_string_length = null)
 {
-  # Remove dead spaces from string.
-  $string = trim($string);
-  $string = preg_replace('/\s+/', ' ', $string);
+    // Remove dead whitespace from string.
+    $p_string = trim($p_string);
+    $p_string = preg_replace('/\s+/', ' ', $p_string);
   
-  # Prevent potential Unicode codec problems.
-  utf8_decode($string);
+    // Prevent potential Unicode codec problems.
+    utf8_decode($p_string);
 
-  # Converts HTML characters into their respective HTML entities.
-  htmlentities($string, ENT_NOQUOTES);  
-  $string = str_replace("#", "&#35;", $string);
-  $string = str_replace("%", "&#37;", $string);
+    // Converts HTML characters into their respective HTML entities.
+    htmlentities($p_string, ENT_NOQUOTES);
+    $p_string = str_replace("#", "&#35;", $p_string);
+    $p_string = str_replace("%", "&#37;", $p_string);
   
-  # Trims string to given length (prevents excessive strings).
-  $length = intval($length);
-  if($length > 0)
-  {
-    $string = substr($string, 0, $length);
-  }
-  
-  return $string;
+    // Trims string to given length (prevents excessive strings).
+    $c_string_length = intval($p_string_length);
+    if(is_int($c_string_length) && $c_string_length > 0) {
+        $p_string = substr($p_string, 0, $c_length);
+    }
+    
+    $c_string = mysqli_real_escape_string($p_string);
+    
+    return $c_string;
 }
 ?>

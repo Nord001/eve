@@ -2,8 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <!-- EVE Online Information System Project
-     Written By: Andy Lo
-     Last Modified: September 05, 2010 -->
+     Written By: Andy Lo -->
 
 <!-- Script checks visitor browser. If Internet Explorer is detected, the
      visitor is redirected. -->
@@ -32,25 +31,25 @@
            data and authenticates the user. -->
       <form name="login" action="login.php" method="post">
       <!-- Username Prompt -->
-      <div id="entry">
+      <div class="entry">
         <label>Username:</label>
-        <input type="text" name="username" size="16" />
+        <input type="text" name="username" size="32" maxlength="32" />
       </div>
       <!-- Password Prompt -->
-      <div id="entry">
+      <div class="entry">
       <label>Password:</label>
-      <input type="password" name="password" size="32" />
+      <input type="password" name="password" size="32" maxlength="32" />
       </div>
       <!-- Default Database Prompt -->
-      <div id="entry">
+      <div class="entry">
       <label>Database:</label>
       <select name="database" size="1">
-          <option value="andylo_zxq_eve">Item Database</option>
+          <option value="eve">Item Database</option>
       </select>
       </div>
       <!-- Remember Information Prompt -->
       <!-- Note: Not yet implemented. -->
-      <div id="entry">
+      <div class="entry">
         <input type="checkbox" name="remember" />Remember login information.
       </div>
       <input type="submit" name="submit" value="Submit" />
