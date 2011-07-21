@@ -1,7 +1,7 @@
 /**
  * EVE Online Information System Project
  * 
- * Title: c_factory.js
+ * Title: Factory.js
  * 
  * Author: Andy Lo
  * Last Modified: 2011-25-06
@@ -23,7 +23,7 @@
  * 
  * (end example)
  */
-function c_Factory() {
+function Factory() {
     // Private:
     
     var m_productClass = null;

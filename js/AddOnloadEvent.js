@@ -1,21 +1,21 @@
 /**
  * EVE Online Information System Project
  * 
- * Title: c_AddOnloadEvent.js
+ * Title: AddOnloadEvent.js
  * 
  * Author: Andy Lo
  * Last Modified: 2011-22-06
  */
 
 /**
- * Class: c_AddOnloadEvent
+ * Class: AddOnloadEvent
  * 
  * Manages a queue of event handler functions for the window.onload event.
  * 
  * (begin example)
  * 
  * // Create the c_AddOnloadEvent object.
- * onloadQueue = new c_AddOnloadEvent();
+ * onloadQueue = new AddOnloadEvent();
  * 
  * // Add the event handler functions to the queue.
  * onloadQueue.addEvent(handler1);

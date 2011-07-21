@@ -1,66 +1,105 @@
-/*****************************************
- * EVE Online Information System Project *
- * Written By: Andy Lo                   *
- * Last Modified: 2011-13-01             *
- ****************************************/
+/**
+ * EVE Online Information System Project
+ * 
+ * Title: XMLHttpRequest.js
+ * 
+ * Author: Andy Lo
+ */
 
-function addLoadEvent(currentHandler)
-{
-  var existingHandler = window.onload;
-  if(typeof existingHandler != "function")
-  {
-    window.onload = currentHandler;
-  }
-  else
-  {
-    window.onload = function()
-    {
-      if(existingHandler)
-      {
-        existingHandler();
-      }
-      currentHandler();
+/**
+ * Class: XMLHttpRequest
+ * 
+ * Manages HTTP requests asynchronously.
+ * 
+ * (begin example)
+ * 
+ * // Create the XMLHttpRequest object.
+ * xhrobject = new XMLHttpRequest();
+ * 
+ * (end example)
+ * 
+ */
+function XMLHttpRequest() {
+
+    // Private:
+    var sendURL;
+    var sendMethod; // (GET or POST)
+    var sendParameters;
+
+    // Public:
+
+    // Accessor Methods
+    this.getSendURL = function() {
+        return sendURL;
     }
-  }
-}
+    
+    this.getSendMethod = function() {
+        return sendMethod;
+    }
+    
+    this.getSendParameters = function() {
+        return sendParameters;
+    }
 
-// This function creates and returns an XHR object.  No ActiveX implementation.
-function createXmlHttpRequestObject()
-{
-  var httpRequest;
+    // Mutator Methods
+    this.setSendURL = function(url) {
+        sendURL = url;
+    }
 
-  httpRequest = new XMLHttpRequest();
+    this.setSendMethod = function(method) {
+        if(method != "GET" && method != "POST") {
+            alert("Invalid send method. Use either GET or POST.");
+        }
 
-  if(!httpRequest)
-  {
-    // Displays an alert if an XHR object could not be created.
-    alert("Error creating XMLHttpRequest object.");
-  }
-  else
-  {
-    return httpRequest;
-  }
-}
+        sendMethod = method;
+    }
 
-function handleServerResponse(responseHandler)
-{
-  if(httpRequest.readyState == 4 && httpRequest.status == 200)
-  {
-      // Reads server response.
-      textResponse = httpRequest.responseText;
+    this.setSendParameters = function(parameters) {
+        sendParameters = parameters;
+    }
 
-      // Error checking code.  Generates an error message if either an error or
-      // no response is detected.
-      if(textResponse.indexOf("ERRNO") >= 0
-         || textResponse.indexOf("error") >= 0
-         || textResponse.length == 0)
-      {
-        alert(textResponse.length == 0 ? "Server error." : textResponse);
-        return;
-      }
-      // If no error is detected, then the XML grid is retrieved.
-      xmlResponse = httpRequest.responseXML;
+    // Method setRequest
+    this.setRequest = function() {
+        if(this.readyState == 4 || this.readyState == 0) {
+            // THIS CODE NEEDS TO BE MOVED!
+            // Clear the display area when creating a new query form.
+            // var displayDiv = document.getElementById(displayDivId);
+            // displayDiv.innerHTML = '';
 
-      responseHandler();
-  }
+            // Sets up the connection.
+            this.open(sendMethod, sendURL, true);
+            this.setRequestHeader("Content-type",
+                "application/x-www-form-urlencoded");
+            this.onreadystatechange = handleServerResponse;
+        }
+    }
+
+    // Method sendRequest
+    this.sendRequest = function() {
+        this.send(sendParameters);
+    }
+
+    // Method handleServerResponse
+    this.handleServerResponse = function() {
+        if(this.readyState == 4 && this.status == 200) {
+            // Reads server text response.
+            var textResponse = this.responseText;
+
+            // Error checking code. Generates an error message if either an
+            // error or no response is detected.
+            if(textResponse.indexOf("ERRNO") >= 0
+                || textResponse.indexOf("error") >= 0
+                || textResponse.length == 0) {
+                alert(textResponse.length == 0 ? "Server error." : textResponse);
+                return;
+            }
+
+            var xmlResponse = this.responseXML;
+
+            // If no errors are detected, then the XML response is retrieved.
+            return xmlResponse;
+        } else {
+            return null;
+        }
+    }
 }
