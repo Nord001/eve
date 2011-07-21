@@ -1,6 +1,6 @@
-ALTER TABLE item_category AUTO_INCREMENT = 1;
+ALTER TABLE item_category_table AUTO_INCREMENT = 1;
 
-INSERT INTO item_category (`category_name`) VALUES
+INSERT INTO item_category_table ('category_id','category_name') VALUES
     (1,'Ores & Minerals'),
     (2,'Gas Clouds & Boosters'),
     (3,'Ice & Ice Products'),

@@ -1,6 +1,6 @@
-ALTER TABLE item AUTO_INCREMENT = 1;
+ALTER TABLE item_table AUTO_INCREMENT = 1;
 
-INSERT INTO item (`category_ID`, `type_ID`, `item_name`) VALUES
+INSERT INTO item_table ('category_id', 'type_id', 'item_name') VALUES
     (1,1,'Veldspar'),
     (1,1,'Concentrated Veldspar'),
     (1,1,'Dense Veldspar'),
