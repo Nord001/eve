@@ -10,9 +10,10 @@
 
 <!-- Load script to generate dynamic spreadsheet table from XML data. -->
 <!-- language = "Javascript" deprecated. Use type="text/javascript" instead. -->
-<script type="text/javascript" src="/js/factory.js"></script>
-<script type="text/javascript" src="/js/xhr.js"></script>
-<script type="text/javascript" src="/js/jstest.js"></script>
+<script type="text/javascript" srs="/eve/js/AddOnloadEvent.js"></script>
+<script type="text/javascript" src="/eve/js/XMLHttpRequest.js"></script>
+<script type="text/javascript" src="/eve/js/Factory.js"></script>
+<script type="text/javascript" src="/eve/js/jstest.js"></script>
 <p>Scripts loaded.</p>
 </body>
 </html>
