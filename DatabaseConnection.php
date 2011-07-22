@@ -11,14 +11,18 @@
  * @author loandy
  */
 class DatabaseConnection {
-    private static $connection;
+    private static $dbconnection = null;
     
-    public static function get() {
-        if($connection = null) {
-            $connection = new DatabaseConnection();
+    protected function __construct() {
+        
+    }
+    
+    public static function getInstance() {
+        if($this->dbconnection = null) {
+            $this->dbconnection = new DatabaseConnection();
         }
         
-        return $connection;
+        return $this->dbconnection;
     }
 }
 

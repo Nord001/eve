@@ -1,5 +1,5 @@
 <?php
-function c_Sanitize_API($p_string, $p_string_length = null)
+function sanitize($p_string, $p_string_length = null)
 {
     // Remove dead whitespace from string.
     $p_string = trim($p_string);

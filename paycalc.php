@@ -1,8 +1,7 @@
 <?php require_once('authenticate.php'); ?>
 
 <!-- EVE Online Information System Project
-     Written By: Andy Lo
-     Last Modified: 2011-05-05 -->
+     Written By: Andy Lo -->
 
 <html>
 <head>
