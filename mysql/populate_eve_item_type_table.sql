@@ -1,6 +1,6 @@
-ALTER TABLE item_type_table AUTO_INCREMENT = 1;
+ALTER TABLE eve_item_type_table AUTO_INCREMENT = 1;
 
-INSERT INTO item_type_table ('category_id', 'type_name') VALUES
+INSERT INTO eve_item_type_table (`category_id`, `type_name`) VALUES
     (1,'Veldspar'),
     (1,'Scordite'),
     (1,'Plagioclase'),
