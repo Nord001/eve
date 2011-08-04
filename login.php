@@ -4,6 +4,7 @@
  */
 
 require_once('Singleton.php');
+require_once('DatabaseConnection.php');
 session_start();
 
 /* Checks whether or not the user was directed from the correct page.
@@ -12,10 +13,8 @@ session_start();
 if(isset($_POST['username'], $_POST['password']) && !empty($_POST['username'])) {
     $_SESSION['authenticated'] = false;
     
-    // Configure database connection.
-    $t_db_dsn = 'mysql:host=localhost;dbname=eve';
-    $t_db_username = 'eve';
-    $t_db_password = 'B968AHTjZZK7NVDx';
+    Singleton::setClass(DatabaseConnection);
+    $db = Singleton::getInstance();
 
     // Gets POST data.
     $t_username = $_POST['username'];
@@ -23,14 +22,7 @@ if(isset($_POST['username'], $_POST['password']) && !empty($_POST['username'])) 
     
     // Cleans POST data.
     unset($_POST['username'], $_POST['password']);
-    
-    // Sets up connection to database.
-    try {
-        $db = new PDO($t_db_dsn, $t_db_username, $t_db_password);
-    } catch(PDOException $e) {
-        echo 'Connection failed: ' . $e->getMessage();
-    }
-    
+
     // Set up authentication query.
     $eve_user_table = 'eve_user_table';
     $query = "SELECT username, password FROM $eve_user_table WHERE username =

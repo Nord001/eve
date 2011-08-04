@@ -6,23 +6,32 @@
  */
 
 /**
- * Description of DatabaseConnection
+ * Class: Singleton
  *
- * @author loandy
+ * @author Andy Lo
  */
-class DatabaseConnection {
-    private static $dbconnection = null;
+class Singleton {
+    private static $instance = null;
+    private static $class = null;
     
-    protected function __construct() {
+    private function __construct() {
         
     }
     
+    public static function setClass($setClass) {
+        Singleton::$class = $setClass;
+    }
+    
+    public static function getClass() {
+        return Singleton::$class;
+    }
+    
     public static function getInstance() {
-        if($this->dbconnection = null) {
-            $this->dbconnection = new DatabaseConnection();
+        if(Singleton::$instance == null) {
+            Singleton::$instance = new Singleton::$class;
         }
         
-        return $this->dbconnection;
+        return Singleton::$instance;
     }
 }
 
