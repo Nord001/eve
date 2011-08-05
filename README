@@ -1,0 +1,35 @@
+********************************
+*           History            *
+********************************
+
+This application is a concept I started a couple years back for my EVE Online corporation (RIP Eternity Enterprises, Ltd.) that I have steadily left and returned to over time.  Originally, all corporate financial management was accomplished via a massive Excel spreadsheet book that I had created.  As I updated and released new verisons of the spreadsheet book, it became a hassle to make sure that everybody was on the same version of the spreadsheet.  Another problem was that it was an Excel spreadsheet, which forced everybody to have Microsoft Office as there were some features (such as comments) that were unsupported in popular alternatives like OpenOffice (at the time).
+
+I started the application in the hopes of streamlining the management process, but I've gotten considerably busier since then and I have also left EVE Online.  However, this application was still a great project to learn to code on (I learned AJAX on this project), and it now serves as an experimental coding playground for me.
+
+********************************
+*        Directory Tree        *
+********************************
+|eve   :: Root folder containing the primary files of the application.
+|-----css   :: Contains all of the files for styling (i.e. CSS files).
+|-----img   :: Contains all of the image files (which isn't much, as I was focused more on business logic).
+|-----js    :: Contains all of the JavaScript files.
+|-----mysql :: Contains the MySQL workbench database model as well as all the scripts for populating the MySQL database for the application.
+|-----test  :: Contains all of the "unit test" files.  They may not actually be fully written unit test suites, but all of the testing code goes here.
+|-----xml   :: Contains obsolete XML files I keep around for historical purposes.
+|-----xsl   :: Contains the XSL files to style the XML returned from the PHP scripts.
+
+********************************
+*         Requirements         *
+********************************
+~ At least PHP 5.3.0.
+~ The mysqli and PDO APIs.
+~ Some version of MySQL 5.x.
+~ MySQL workbench is a plus for the database models I stuffed in the mysql folder.
+
+********************************
+*     Contact Information      *
+********************************
+If you want to tell me how terrible my code is, need help understanding any of it, or want to recommend additions/changes, feel free to contact me.
+
+Author: Andy Lo
+E-Mail: andy.lo@gmx.com
