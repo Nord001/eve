@@ -12,8 +12,9 @@
 <!-- language = "Javascript" deprecated. Use type="text/javascript" instead. -->
 <script type="text/javascript" srs="/eve/js/AddOnloadEvent.js"></script>
 <script type="text/javascript" src="/eve/js/XMLHttpRequest.js"></script>
+<script type="text/javascript" src="/eve/js/Singleton.js"></script>
 <script type="text/javascript" src="/eve/js/Factory.js"></script>
-<script type="text/javascript" src="/eve/js/jstest.js"></script>
-<p>Scripts loaded.</p>
+<script type="text/javascript" src="/eve/test/jstest.js"></script>
+<p>JavaScript testing finished.</p>
 </body>
 </html>
