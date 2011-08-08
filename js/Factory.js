@@ -26,9 +26,11 @@
 function Factory() {
     // Private:
     
-    var m_productClass = null;
+    var _productClass = null;
     
     // Public:
+    
+    Factory.prototype.s_name = 'Factory';
     
     /**
      * Method: setClass
@@ -45,13 +47,13 @@ function Factory() {
      * See Also:
      *     <create>
      */
-    this.setClass = function(p_className) {
+    this.setClass = function(p_class) {
         /* If the class parameter isn't actually a function, generate an error.
          * This prevents the factory from producing something strange. */
-        if(typeof(p_className) != "function") {
+        if(typeof(p_class) != "function") {
             alert("Factory cannot be set to non-function reference.");
         } else {
-            m_productClass = p_className;
+            _productClass = p_class;
         }
     }
     
@@ -69,7 +71,7 @@ function Factory() {
      * 
      */
     this.getClass = function() {
-        return m_productClass;
+        return _productClass;
     }
     
     /**
@@ -86,7 +88,7 @@ function Factory() {
      */
     this.create = function() {
         try {
-            l_instance = new m_productClass();
+            l_instance = new _productClass();
         } catch(e_error) {
             alert("Error instantiating class: " + e_error);
         }

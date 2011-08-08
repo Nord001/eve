@@ -1,7 +1,6 @@
 /*****************************************
  * EVE Online Information System Project *
  * Written By: Andy Lo                   *
- * Last Modified: September 15, 2010     *
  ****************************************/
 
 /* GLOBAL VARIABLES */

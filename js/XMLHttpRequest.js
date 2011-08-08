@@ -27,7 +27,9 @@ function XMLHttpRequest() {
     var sendParameters;
 
     // Public:
-
+    
+    XMLHttpRequest.prototype.s_name = 'XMLHttpRequest';
+    
     // Accessor Methods
     this.getSendURL = function() {
         return sendURL;
@@ -61,10 +63,13 @@ function XMLHttpRequest() {
     // Method setRequest
     this.setRequest = function() {
         if(this.readyState == 4 || this.readyState == 0) {
-            // THIS CODE NEEDS TO BE MOVED!
-            // Clear the display area when creating a new query form.
-            // var displayDiv = document.getElementById(displayDivId);
-            // displayDiv.innerHTML = '';
+            /**
+             * THIS CODE NEEDS TO BE MOVED!
+             * It is saved here for preservational purposes.
+             * Clear the display area when creating a new query form.
+             * var displayDiv = document.getElementById(displayDivId);
+             * displayDiv.innerHTML = '';
+             */
 
             // Sets up the connection.
             this.open(sendMethod, sendURL, true);
