@@ -27,6 +27,17 @@ I started the application in the hopes of streamlining the management process, b
 ~ MySQL workbench is a plus for the database models I stuffed in the mysql folder.
 
 ********************************
+*            Setup             *
+********************************
+To set up the database, create a MySQL database called 'eve'.  Then, run these scripts from top-to-bottom order:
+~ create_eve_tables.sql
+~ populate_eve_item_category_table.sql
+~ populate_eve_item_type_table.sql
+~ populate_eve_item_table.sql
+
+A centralized configuration setup is in the works, but for now, if you want to edit the credentials for logging into your MySQL database, look in DatabaseConnection.php.
+
+********************************
 *     Contact Information      *
 ********************************
 If you want to tell me how terrible my code is, need help understanding any of it, or want to recommend additions/changes, feel free to contact me.
