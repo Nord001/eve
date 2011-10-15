@@ -49,7 +49,7 @@ class DatabaseConnection {
         $this->setConnection($t_db_dsn, $t_db_username, $t_db_password);
     }
     
-    private function setConnection($p_db_dsn, $p_db_username, $p_db_password) {
+    public function setConnection($p_db_dsn, $p_db_username, $p_db_password) {
         // Attempts to set up connection to database.
         try {
             $this->_db_connection = new PDO($p_db_dsn, $p_db_username,
@@ -59,9 +59,8 @@ class DatabaseConnection {
         }
     }
     
-    private function getConnection() {
+    public function getConnection() {
         return $this->_db_connection;
     }
 }
-
 ?>
