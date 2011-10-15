@@ -62,5 +62,9 @@ class DatabaseConnection {
     public function getConnection() {
         return $this->_db_connection;
     }
+    
+    public function closeConnection() {
+        $this->_db_connection = null;
+    }
 }
 ?>
