@@ -10,6 +10,7 @@
 
 require_once('Singleton.php');
 require_once('DatabaseConnection.php');
+require_once('DatabaseQuery.php');
 session_start();
 
 /* Checks whether or not the user was directed from the correct page.
@@ -17,10 +18,6 @@ session_start();
  */
 if(isset($_POST['username'], $_POST['password']) && !empty($_POST['username'])) {
     $_SESSION['authenticated'] = false;
-    
-    // Sets up and returns a PDO database connection object.
-    Singleton::setClass(DatabaseConnection);
-    $dbconnection = Singleton::getInstance()->getConnection();
 
     // Gets form authentication data.
     $t_username = $_POST['username'];
@@ -29,37 +26,25 @@ if(isset($_POST['username'], $_POST['password']) && !empty($_POST['username'])) 
     // Clears form authentication data.
     unset($_POST['username'], $_POST['password']);
 
-    // Set up authentication query.
-    $eve_user_table = 'eve_user_table';
-    $query = "SELECT username, password FROM $eve_user_table WHERE username =
-        :username";
-    
-    if(!$stmt = $dbconnection->prepare($query)) {
-        echo 'Failed to prepare statement.';
-        exit();
-    } else {
-        $stmt->bindParam(':username', $t_username);
+    // Set up authentication query and query parameters.
+    $t_db_query = new DatabaseQuery();
+    $t_fetch_columns = array(0 => "username", 1 => "password");
+    $t_fetch_tables = array(0 => "eve_user_table");
+    $t_fetch_where = array("username" => $t_username);
 
-        // Executes the query and buffers the results.
-        try {
-            $stmt->execute();
-        } catch(PDOException $e) {
-            echo 'Query failed: ' . $e->getMessage();
-        }
-
-        // Parses the query results.
-        while($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
-            /* Authenticates the session data against the results from the
-             * database.
-             */
-            if(!strcmp($result['username'], $t_username)
-                && !strcmp($result['password'], md5($t_password))) {
-                $_SESSION['authenticated'] = true;
-                echo "Authentication success."; // Strictly for debugging.
-            } else {
-                echo "Authentication failed."; // Strictly for debugging.
-                //header("Location: logout.php");
-            }
+    if($t_result = $t_db_query->select($t_fetch_columns, $t_fetch_tables,
+        $t_fetch_where)) {
+        /* Matches the session data against the results from the database.
+         * Note that currently the result set is returned by
+         * PDOStatement->fetchAll.
+         */
+        if(!strcmp($t_result[0]['username'], $t_username)
+            && !strcmp($t_result[0]['password'], md5($t_password))) {
+            $_SESSION['authenticated'] = true;
+            echo "Authentication success.<br />";
+            header("Location: grid_edit.php");
+        } else {
+            header("Location: logout.php");
         }
     }
 }
