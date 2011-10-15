@@ -2,9 +2,9 @@
 *           History            *
 ********************************
 
-This application is a concept I started a couple years back for my EVE Online corporation (RIP Eternity Enterprises, Ltd.) that I have steadily left and returned to over time.  Originally, all corporate financial management was accomplished via a massive Excel spreadsheet book that I had created.  As I updated and released new verisons of the spreadsheet book, it became a hassle to make sure that everybody was on the same version of the spreadsheet.  Another problem was that it was an Excel spreadsheet, which forced everybody to have Microsoft Office as there were some features (such as comments) that were unsupported in popular alternatives like OpenOffice (at the time).
+This application is a concept I started a couple years back for my EVE Online corporation (RIP Eternity Enterprises, Ltd.) that I have been steadily leeaving and returning to over time.  Originally, all of our corporation's financial management was accomplished via a massive Excel spreadsheet workbook that I had created, and as I updated and released new versions of the workbook, it became a hassle for me to ensure that all the managers were using the most up-to-date version.  Another problem was that it was a *Microsoft* Excel spreadsheet, which (at the time) forced all the managers to use Microsoft Office because there were some features (e.g. comments) that were unsupported in popular free alternatives like OpenOffice.org (at the time).
 
-I started the application in the hopes of streamlining the management process, but I've gotten considerably busier since then and I have also left EVE Online.  However, this application was still a great project to learn to code on (I learned AJAX on this project), and it now serves as an experimental coding playground for me.
+I began developing the application in the hopes of streamlining our management process, but I became considerably busier and have also had to leave EVE Online.  However, this application was still a great project to introduce myself to more detailed web programming than I had been doing prior (I learned a considerable amount about AJAX on this project), and it now serves me as an experimental coding sandbox.
 
 ********************************
 *        Directory Tree        *
@@ -21,10 +21,13 @@ I started the application in the hopes of streamlining the management process, b
 ********************************
 *         Requirements         *
 ********************************
-~ At least PHP 5.3.0.
-~ The mysqli and PDO APIs.
-~ Some version of MySQL 5.x.
-~ MySQL workbench is a plus for the database models I stuffed in the mysql folder.
+~ PHP 5.3 with the mysqli and PDO APIs.
+~ MySQL 5.x.
+
+********************************
+*           Optional           *             
+********************************
+~ MySQL Workbench: For the database models I stuffed in the mysql folder.
 
 ********************************
 *            Setup             *
