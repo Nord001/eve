@@ -1,10 +1,10 @@
 /**
- * EVE Online Information System Project
+ * Project: EVE Online Information System Project
  * 
  * Title: AddOnloadEvent.js
  * 
  * Author: Andy Lo
- * Last Modified: 2011-22-06
+ * E-Mail: andy.lo@gmx.com
  */
 
 /**

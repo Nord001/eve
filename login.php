@@ -1,6 +1,11 @@
 <?php
-/* EVE Online Information System Project
- * Written By: Andy Lo
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: login.php
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
  */
 
 require_once('Singleton.php');

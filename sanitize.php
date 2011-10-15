@@ -1,6 +1,14 @@
 <?php
-function sanitize($p_string, $p_string_length = null)
-{
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: Sanitize.php
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
+ */
+
+function sanitize($p_string, $p_string_length = null) {
     // Remove dead whitespace from string.
     $p_string = trim($p_string);
     $p_string = preg_replace('/\s+/', ' ', $p_string);

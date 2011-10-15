@@ -1,7 +1,12 @@
 <?php
-# EVE Online Information System Project
-# Written By: Andy Lo
-# Last Modified: September 05, 2010
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: authenticate.php
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
+ */
 
 session_start();
 

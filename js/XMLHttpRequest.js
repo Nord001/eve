@@ -1,9 +1,10 @@
 /**
- * EVE Online Information System Project
+ * Project: EVE Online Information System Project
  * 
  * Title: XMLHttpRequest.js
  * 
  * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
  */
 
 /**

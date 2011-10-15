@@ -1,7 +1,11 @@
-/*****************************************
- * EVE Online Information System Project *
- * Written By: Andy Lo                   *
- ****************************************/
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: grid.js
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
+ */
 
 /* GLOBAL VARIABLES */
 // Creates and stores the reference for an XHR object.

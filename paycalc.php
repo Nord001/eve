@@ -1,7 +1,15 @@
-<?php require_once('authenticate.php'); ?>
+<?php
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: paycalc.php
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
+ */
 
-<!-- EVE Online Information System Project
-     Written By: Andy Lo -->
+require_once('authenticate.php');
+?>
 
 <html>
 <head>

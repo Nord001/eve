@@ -1,9 +1,14 @@
 <?php
-# EVE Online Information System Project
-# Written By: Andy Lo
+/**
+ * Project: EVE Online Information System Project
+ * 
+ * Title: map.php
+ * 
+ * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
+ */
 
 require_once('authenticate.php');
-require_once('sanitize.php');
 
 /* CLASS IMPLEMENTATION */
 # This class creates an XML map of the database structure.

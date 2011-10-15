@@ -1,11 +1,12 @@
 <?php
 
 /**
- * EVE Online Information System Project
+ * Project: EVE Online Information System Project
  * 
  * Title: Singleton.php
  * 
  * Author: Andy Lo
+ * E-Mail: andy.lo@gmx.com
  */
 
 /**
