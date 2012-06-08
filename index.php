@@ -4,10 +4,6 @@
 <!-- EVE Online Information System Project
      Written By: Andy Lo -->
 
-<!-- Script checks visitor browser. If Internet Explorer is detected, the
-     visitor is redirected. -->
-<?php include('browser.php'); ?>
-
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
